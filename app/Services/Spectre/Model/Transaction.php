@@ -66,7 +66,7 @@ class Transaction
         $model->amount       = (string) $data['amount'];
         $model->currencyCode = $data['currency_code'];
         $model->description  = $data['description'];
-        $model->category     = $data['category'];
+        $model->category     = $data['category'] ?? '';
         $model->duplicated   = $data['duplicated'];
         $model->extra        = TransactionExtra::fromArray($data['extra'] ?? []);
         $model->accountId    = $data['account_id'];

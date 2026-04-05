@@ -53,7 +53,7 @@ class TransactionProcessor
      */
     public function download(): array
     {
-        $this->refreshConnection();
+        //$this->refreshConnection();
         $this->notBefore = null;
         $this->notAfter  = null;
         if ('' !== (string) $this->configuration->getDateNotBefore()) {
